@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 use App\Models\Animal;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Cache;
 
 class AnimalController extends Controller
 {
@@ -13,7 +15,10 @@ class AnimalController extends Controller
      */
     public function index()
     {
-        return Animal::paginate(17);
+       
+        $value = Product::take(10)->get();
+
+        return $value;
     
     }
 
@@ -27,12 +32,7 @@ class AnimalController extends Controller
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+
     public function store(Request $request)
     {
         $request->validate([

@@ -1,0 +1,19 @@
+AddDefaultCharset utf-8
+RewriteEngine On
+RewriteRule (.*) public/$1
+
+<ifModule mod_gzip.c>
+ExpiresActive On
+#swuposamb one u u306paxeHua Ha odHy Hedeno
+ExpiresBy Type image/x-icon "access plus 7 days"
+ExpiresBy Type image/jpeg "access plus 7 days"
+ExpiresBy Type image/png "access plus 7 days"
+ExpiresBy Type image/gif "access plus 7 days"
+ExpiresBy Type application/x-shockwave-flash "access plus 7 days"
+ExpiresBy Type text/css "access plus 7 days"
+ExpiresBy Type text/javascript "access plus 7 days"
+ExpiresBy Type application/javascript "access plus 7 days"
+ExpiresBy Type application/x-javascript "access plus 7 days"
+ExpiresBy Type text/html "access plus 1 day"
+ExpiresBy Type application/xhtm/+xml "access plus 10 minutes"
+</ifModule>

@@ -107,6 +107,7 @@ return [
     | localized telephone numbers, street address information and more.
     |
     */
+    
 
     'faker_locale' => 'en_US',
 
@@ -181,6 +182,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        \Profclems\PostmanCollectionGenerator\PostmanCollectionServiceProvider::class,
 
         /*
          * Package Service Providers...
